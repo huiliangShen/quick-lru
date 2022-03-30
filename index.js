@@ -1,4 +1,16 @@
 export default class QuickLRU extends Map {
+	// init LRU
+	/**
+	 * options: {
+	 * // 存储键值对的最大length
+	 * maxSize: number = Infinity;
+	 * // 过期时间
+	 * maxAge: number;
+	 * // 在从缓存中逐出项之前调用。对于副作用或需要显式清理的对象URL（“revokeObjectURL”）之类的项目非常有用。???
+	 * onEviction: (key: KeyType, value: ValueType) => void;
+	 * }
+	 * @param {*} options 
+	 */
 	constructor(options = {}) {
 		super();
 
